@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{80460F30-EB20-91C3-00F3-357DF2990E82}</ProjectGuid>
+    <ProjectGuid>{F5299623-C5E4-B04E-2F75-C674B38317AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Cinemachine</AssemblyName>
@@ -56,83 +56,83 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineBrain.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineVirtualCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachinePipeline.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\Cinemachine3rdPersonFollow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineBasicMultiChannelPerlin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineTransposer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineCollisionImpulseSource.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Experimental\CinemachineNewFreeLook.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\RuntimeUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\LensSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\UpdateTracker.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineCollider.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachinePath.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineTouchInputMapper.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\PostProcessing\CinemachineVolumeSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachinePOV.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\Predictor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineSmoothPath.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineStoryboard.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineShot.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineInputProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineRecomposer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\ICinemachineCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\TargetPositionCache.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineConfiner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineSameAsFollowTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\Cinemachine3rdPersonAim.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineDebug.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\UnityVectorExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineExternalCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineFreeLook.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineTriggerAction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineCameraOffset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineCollider.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachinePathBase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineStateDrivenCamera.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineDollyCart.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineBlenderSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineDebug.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Experimental\CinemachineNewVirtualCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\UnityVectorExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachinePixelPerfect.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineIndependentImpulseListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineExternalCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineClearShot.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineInputAxisDriver.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineHardLockToTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\SignalSourceAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineTriggerAction.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineFreeLook.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\GroupWeightManipulator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineTrackedDolly.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\SplineHelpers.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachinePropertyAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseSource.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineFixedSignal.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineTargetGroup.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\GaussianFilter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineShotPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineMixingCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineHardLookAt.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineFramingTransposer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineComposer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineFollowZoom.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseDefinition.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\NoiseSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineCameraOffset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineBlendListCamera.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineGroupComposer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\PostProcessing\CinemachinePostProcessing.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineMixer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineOrbitalTransposer.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\ICinemachineComponent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CameraState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\AxisState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineBlend.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineCore.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineVirtualCameraBase.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineComponentBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineBrain.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\LensSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineConfiner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineSameAsFollowTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Experimental\CinemachineNewVirtualCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineVirtualCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineClearShot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachinePipeline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineHardLookAt.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineInputProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\Cinemachine3rdPersonFollow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\SignalSourceAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachinePropertyAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseSource.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineMixingCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineExtension.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\AxisState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineVirtualCameraBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\RuntimeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineSmoothPath.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachinePixelPerfect.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineFixedSignal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineFramingTransposer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\NoiseSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineMixer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineTransposer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\Predictor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineShot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\TargetPositionCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineIndependentImpulseListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineTrackedDolly.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineGroupComposer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Experimental\CinemachineNewFreeLook.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\CinemachineTouchInputMapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineStoryboard.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\Cinemachine3rdPersonAim.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineStateDrivenCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineHardLockToTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Helpers\GroupWeightManipulator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\SplineHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineTargetGroup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineImpulseDefinition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Impulse\CinemachineCollisionImpulseSource.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\UpdateTracker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachinePOV.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineRecomposer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineBasicMultiChannelPerlin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineInputAxisDriver.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\GaussianFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Timeline\CinemachineShotPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Components\CinemachineComposer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineFollowZoom.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Behaviours\CinemachineBlendListCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CameraState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineCore.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\Core\CinemachineBlend.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.cinemachine@2.6.17\Runtime\com.unity.cinemachine.asmdef" />
@@ -741,23 +741,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{46E1C6B2-E090-E9FD-F72A-0D273B66384A}</Project>
+      <Project>{FC5C424C-A462-6818-8648-20A5F268D3DE}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{EA5BE884-1E3A-1064-E0C6-45BCC0938F22}</Project>
+      <Project>{94859541-8B7E-6D31-00E1-B4A8671177CD}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{3AB8F285-9586-913B-795E-879FD3E29D8F}</Project>
+      <Project>{3BC519CA-4AED-21F4-797B-F5DBE8FD4946}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{683AE487-8B24-A605-5FD6-1F48DA6FCD15}</Project>
+      <Project>{E583CC09-8411-8464-E4BB-E92265CE9C96}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D184BA6E-BA74-6D26-26D4-61748B19425C}</Project>
+      <Project>{611AD780-CBFB-1B4C-E558-5537047C79D6}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

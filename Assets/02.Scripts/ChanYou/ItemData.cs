@@ -64,11 +64,11 @@ public class ItemData : MonoBehaviour
     void Start()
     {
         thePlayerStat = FindObjectOfType<PlayerStat>();
-        itemList.Add(new Item_Info(111, "빨간 포션", "체력을 50 회복시켜주는 기적의 물약", Item_Info.ItemType.Use));
-        itemList.Add(new Item_Info(121, "파란 포션", "마나를 15 회복시켜주는 기적의 물약", Item_Info.ItemType.Use));
-        itemList.Add(new Item_Info(112, "농축 빨간 포션", "체력을 350 회복시켜주는 기적의 농축 물약", Item_Info.ItemType.Use));
-        itemList.Add(new Item_Info(122, "농축 파란 포션", "마나를 80 회복시켜주는 기적의 농축 물약", Item_Info.ItemType.Use));
-        itemList.Add(new Item_Info(411, "랜덤 상자", "랜덤으로 포션이 나온다. 낮은 확률로 꽝", Item_Info.ItemType.Use));
+        itemList.Add(new Item_Info(111, "빨간 포션", "체력을 50 회복시켜주는 기적의 물약", Item_Info.ItemType.Consume));
+        itemList.Add(new Item_Info(121, "파란 포션", "마나를 15 회복시켜주는 기적의 물약", Item_Info.ItemType.Consume));
+        itemList.Add(new Item_Info(112, "농축 빨간 포션", "체력을 350 회복시켜주는 기적의 농축 물약", Item_Info.ItemType.Consume));
+        itemList.Add(new Item_Info(122, "농축 파란 포션", "마나를 80 회복시켜주는 기적의 농축 물약", Item_Info.ItemType.Consume));
+        itemList.Add(new Item_Info(411, "랜덤 상자", "랜덤으로 포션이 나온다. 낮은 확률로 꽝", Item_Info.ItemType.Consume));
         itemList.Add(new Item_Info(211, "짧은 검", "기본적인 용사의 검", Item_Info.ItemType.Equip));
         itemList.Add(new Item_Info(251, "사파이어 반지", "1분에 미니 1을 회복시켜주는 마법 반지", Item_Info.ItemType.Equip));
         itemList.Add(new Item_Info(311, "고대 유물의 조각1", "반으로 쪼개진 고대 유물의 파편", Item_Info.ItemType.Quest));

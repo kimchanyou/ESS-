@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+    public static InventoryUI instance;
+
+    private ItemData itemData;
+    private List<Item_Info> inventoryItemList; //플레이어가 소지한 아이템 리스트
+
     public GameObject invenGO; // 인벤토리 오브젝트
     public GameObject equipGO; // 장비창 오브젝트
     public Image selectImg; //아이템 선택했을때 표시 되도록
@@ -17,14 +22,42 @@ public class InventoryUI : MonoBehaviour
 
     void Start()
     {
-        
+        itemData = FindObjectOfType<ItemData>();
+        inventoryItemList = new List<Item_Info>();
     }
 
-    
+
     void Update()
     {
         ShowInven();
         ShowEquip();
+    }
+    public void GetAnItem(int _itemID, int _count = 1)
+    {
+        for (int i = 0; i < itemData.itemList.Count; i++)
+        {
+            if (_itemID == itemData.itemList[i].itemID)
+            {
+                for (int j = 0; j < inventoryItemList.Count; j++) //소지품에 같은 아이템이 있는지 검색
+                {
+                    if (inventoryItemList[j].itemID == _itemID) //소지품에 같은 아이템이 있다 -> 갯수만 증감시켜줌
+                    {
+                        if (inventoryItemList[j].item_type == Item_Info.ItemType.Consume)
+                        {
+                            inventoryItemList[j].itemCount += _count;
+                        }
+                        else
+                        {
+                            inventoryItemList.Add(itemData.itemList[i]);
+                        }
+                        return;
+                    }
+                }
+                inventoryItemList.Add(itemData.itemList[i]); //소지품에 해당 아이템 추가
+                inventoryItemList[inventoryItemList.Count - 1].itemCount = _count;
+                return;
+            }
+        }
     }
 
     void ShowInven()

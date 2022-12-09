@@ -14,7 +14,7 @@ public class Item_Info
     public ItemType item_type;
     public enum ItemType
     {
-        Use,
+        Consume,
         Equip,
         Quest,
         ETC

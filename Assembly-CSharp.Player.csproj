@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F2C66030-DA0E-042D-BE10-8DAE04D5CB33}</ProjectGuid>
+    <ProjectGuid>{A96DAFBC-D033-3100-D3CE-7F4765FAEEEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,6 +73,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\05.Effects\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\02.Scripts\ChanYou\ItemData.cs" />
     <Compile Include="Assets\02.Scripts\UI\FloatingText.cs" />
     <Compile Include="Assets\Standard\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\02.Scripts\Player\FoxFire.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\02.Scripts\ChanYou\InventoryUI.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
@@ -116,9 +118,11 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\02.Scripts\Shooter.cs" />
     <Compile Include="Assets\Download\Travis Game Assets\Hit Impact Effects\Demo Scene\Scripts\HitImpactEffectsPreview.cs" />
+    <Compile Include="Assets\02.Scripts\ChanYou\LookAtCamera.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\02.Scripts\UI\OkOrCancel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\02.Scripts\ChanYou\Item_Info.cs" />
     <Compile Include="Assets\02.Scripts\Standard\Player\StandardInput.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSController\CharController_Motor.cs" />
     <Compile Include="Assets\05.Effects\ParticleSystems\Scripts\FireLight.cs" />
@@ -148,8 +152,8 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-    <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
     <Compile Include="Assets\05.Effects\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\02.Scripts\Player\PlayerDamage.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
@@ -168,10 +172,7 @@
     <Compile Include="Assets\02.Scripts\Enemy\EnemyDamage.cs" />
     <Compile Include="Assets\05.Effects\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\02.Scripts\ChanYou\InventoryUI.cs" />
-    <Compile Include="Assets\02.Scripts\ChanYou\Item_Info.cs" />
-    <Compile Include="Assets\02.Scripts\ChanYou\ItemData.cs" />
-    <Compile Include="Assets\02.Scripts\ChanYou\LookAtCamera.cs" />
+    <Compile Include="Assets\02.Scripts\ChanYou\Item_PickUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
@@ -434,6 +435,9 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -457,9 +461,6 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.41f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -808,33 +809,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Cinemachine.Player.csproj">
+      <Project>{E281DD10-D761-7B17-0BB3-28AC2C602F85}</Project>
+      <Name>Cinemachine.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
-      <Project>{9C22CDED-0F0B-FC09-49B0-FBBB0B613868}</Project>
+      <Project>{E50E9B1D-1478-DE10-F8F6-06D113C3A67F}</Project>
       <Name>Unity.Postprocessing.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{B5A3925F-1230-530C-7EF8-B40C9B74F679}</Project>
+      <Project>{5CF6E8D4-ABA6-E7BF-BA63-69BAE7A64446}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{E7536A1D-54EC-268E-D258-CEE8A5D71F6A}</Project>
+      <Project>{0BF7CA16-232E-E8BC-01DF-ABD24ED394D8}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.Player.csproj">
-      <Project>{D52253A2-7704-DC96-3362-A6A0BC7AAA57}</Project>
+      <Project>{7D8A58E8-5F0E-96F1-A27E-220B4A6B071F}</Project>
       <Name>Unity.InputSystem.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{8E7C42CF-4F50-9DF4-B872-4CFCC17F2600}</Project>
+      <Project>{96395FAE-D895-D67E-7535-22A0CC79C286}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{362F13E2-05E5-485D-083D-1B32F13397E4}</Project>
+      <Project>{54453956-FD4F-C1CE-BCE4-552843B30AD3}</Project>
       <Name>Unity.Mathematics.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{9B5BF55F-7D18-CC2A-505A-31868E0B2BB0}</Project>
-      <Name>Cinemachine.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
